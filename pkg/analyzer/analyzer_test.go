@@ -12,6 +12,11 @@ func TestImports(t *testing.T) {
 	analysistest.Run(t, testdata, analyzer.NewAnalyzer(), "imports")
 }
 
+func TestGenerics(t *testing.T) {
+	testdata := analysistest.TestData()
+	analysistest.Run(t, testdata, analyzer.NewAnalyzer(), "generics")
+}
+
 func TestMissing(t *testing.T) {
 	testdata := analysistest.TestData()
 	analysistest.Run(t, testdata, analyzer.NewAnalyzer(), "missing")
