@@ -6,7 +6,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/adamdecaf/xmlencoderclose)](https://goreportcard.com/report/github.com/adamdecaf/xmlencoderclose)
 [![Apache 2 License](https://img.shields.io/badge/license-Apache2-blue.svg)](https://raw.githubusercontent.com/adamdecaf/xmlencoderclose/master/LICENSE)
 
-xmlencoderclose is a Go linter to check that `encoding/xml.Encoder` type has its `Close()` method called.
+xmlencoderclose is a Go linter to check that `encoding/xml.Encoder` type has its `Close()` method called. This linter is similar to [`bodyclose`](https://github.com/timakin/bodyclose) and [`sqlclosecheck`](https://github.com/ryanrolds/sqlclosecheck) with inspiration from [gostaticanalysis/sqlrows](https://github.com/gostaticanalysis/sqlrows)
 
 ## Install
 
