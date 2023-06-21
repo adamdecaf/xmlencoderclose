@@ -8,7 +8,6 @@ import (
 	"github.com/gostaticanalysis/sqlrows/sqlrowsutil"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/buildssa"
-	"golang.org/x/tools/go/analysis/passes/inspect"
 	"golang.org/x/tools/go/ssa"
 )
 
@@ -18,7 +17,6 @@ func NewAnalyzer() *analysis.Analyzer {
 		Doc:  "Checks that xml.Encoder is closed.",
 		Run:  run,
 		Requires: []*analysis.Analyzer{
-			inspect.Analyzer,
 			buildssa.Analyzer,
 		},
 	}
