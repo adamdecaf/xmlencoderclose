@@ -4,7 +4,6 @@ go 1.20
 
 require (
 	github.com/gostaticanalysis/analysisutil v0.7.1
-	github.com/gostaticanalysis/sqlrows v0.0.0-20200307153552-ea5697937269
 	golang.org/x/tools v0.10.0
 )
 

@@ -6,7 +6,6 @@ import (
 	"go/types"
 
 	"github.com/gostaticanalysis/analysisutil"
-	"github.com/gostaticanalysis/sqlrows/sqlrowsutil"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/buildssa"
 	"golang.org/x/tools/go/ssa"
@@ -54,7 +53,7 @@ func run(pass *analysis.Pass) (interface{}, error) {
 				default:
 					pos = instr.Pos()
 				}
-				called, ok := sqlrowsutil.CalledFrom(b, i, encType, methods...)
+				called, ok := analysisutil.CalledFrom(b, i, encType, methods...)
 				if ok && !called {
 					pass.Reportf(pos, "Encoder.Close must be called")
 				}
