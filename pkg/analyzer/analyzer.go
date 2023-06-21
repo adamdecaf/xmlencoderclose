@@ -1,6 +1,7 @@
 package analyzer
 
 import (
+	"errors"
 	"go/token"
 	"go/types"
 
@@ -32,7 +33,7 @@ func run(pass *analysis.Pass) (interface{}, error) {
 
 	encType := analysisutil.TypeOf(pass, "encoding/xml", "*Encoder")
 	if encType == nil {
-		return nil, nil
+		return nil, errors.New("analyzer did not find xml.Encoder type")
 	}
 
 	var methods []*types.Func
