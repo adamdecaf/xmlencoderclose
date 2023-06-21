@@ -40,6 +40,9 @@ func run(pass *analysis.Pass) (interface{}, error) {
 	if m := analysisutil.MethodOf(encType, "Close"); m != nil {
 		methods = append(methods, m)
 	}
+	if len(methods) == 0 {
+		return nil, errors.New("no method finders")
+	}
 
 	for _, f := range funcs {
 		for _, b := range f.Blocks {
