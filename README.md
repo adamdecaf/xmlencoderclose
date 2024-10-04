@@ -16,8 +16,6 @@ go get github.com/adamdecaf/xmlencoderclose
 
 ## Example
 
-Given a few example games where players score goals we can combine those to find their total scores.
-
 ```go
 type Document struct {
 	A string `xml:"a"`
