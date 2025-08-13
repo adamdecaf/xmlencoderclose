@@ -2,6 +2,8 @@ module github.com/adamdecaf/xmlencoderclose
 
 go 1.23.2
 
+toolchain go1.24.6
+
 require (
 	github.com/gostaticanalysis/analysisutil v0.7.1
 	github.com/gostaticanalysis/sqlrows v0.0.0-20231116101209-5091a5920ea6
