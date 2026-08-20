@@ -33,3 +33,8 @@ func TestValid(t *testing.T) {
 	testdata := analysistest.TestData()
 	analysistest.Run(t, testdata, testAnalyzer, "valid")
 }
+
+func TestEmbed(t *testing.T) {
+	testdata := analysistest.TestData()
+	analysistest.Run(t, testdata, testAnalyzer, "embedpkg")
+}
