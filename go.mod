@@ -2,7 +2,7 @@ module github.com/adamdecaf/xmlencoderclose
 
 go 1.25.0
 
-toolchain go1.27.0
+toolchain go1.27.1
 
 require (
 	github.com/gostaticanalysis/analysisutil v0.7.1
