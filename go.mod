@@ -7,7 +7,7 @@ toolchain go1.27.1
 require (
 	github.com/gostaticanalysis/analysisutil v0.7.1
 	github.com/gostaticanalysis/sqlrows v0.0.0-20231116101209-5091a5920ea6
-	golang.org/x/tools v0.50.0
+	golang.org/x/tools v0.51.0
 )
 
 require (
